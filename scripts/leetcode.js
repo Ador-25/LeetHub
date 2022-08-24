@@ -66,6 +66,7 @@ const upload = (
   msg,
   cb = undefined,
 ) => {
+  alert("upload?");
   // To validate user, load user object from GitHub.
   const URL = `https://api.github.com/repos/${hook}/contents/${directory}/${filename}`;
 
@@ -137,6 +138,7 @@ const update = (
   prepend,
   cb = undefined,
 ) => {
+  alert("upload?");
   const URL = `https://api.github.com/repos/${hook}/contents/${directory}/README.md`;
 
   /* Read from existing file on GitHub */
